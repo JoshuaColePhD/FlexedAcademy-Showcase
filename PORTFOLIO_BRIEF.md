@@ -52,14 +52,6 @@ Source code is private; available on request.
    queued rather than treating partial stream text as final.
 6. End on the case study's evaluation and architecture sections.
 
-## Interview story
-
-> The hard problem was not generating teacher-sounding prose. It was preventing
-> plausible but wrong standards codes. I solved that by combining scoped
-> retrieval, a measured relevance floor, strict structured outputs, and a
-> post-generation grounding audit. I then added regression tests for borrowed,
-> invented, cross-course, and out-of-scope citations.
-
 ## Honest limitations
 
 - AP Language is the most thoroughly calibrated path.
