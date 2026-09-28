@@ -18,7 +18,10 @@ Current recall@20: 61 / 61
 ```
 
 The current checked Alabama standards artifact contains 7,456 unique standards
-and 19,701 grade-scoped chunks across 11 frameworks, built for grades 0–12.
+and 19,701 grade-scoped chunks across 11 frameworks, built for grades 0–12
+(Sept 6, 2026 snapshot of the Alabama course-of-study artifact; as of Sept 28,
+2026 the full production corpus holds ~137K standards across all 50 states + DC,
+plus AP, Pre-AP, and ACT).
 An older 143-case set is kept as a historical drift diagnostic rather than a
 release gate, because corpus changes intentionally retired or moved some of its
 expectations. AP Language is the most thoroughly calibrated path; the project
