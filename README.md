@@ -43,3 +43,7 @@ evidence here is evaluation and production-check results.
 ## Source code
 
 Source code is private; available on request.
+
+## License
+
+Copyright (c) 2026 Joshua Cole. All rights reserved. This source is viewable for evaluation only. See [LICENSE](./LICENSE).
