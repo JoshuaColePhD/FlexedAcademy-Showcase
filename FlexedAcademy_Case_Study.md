@@ -1,10 +1,5 @@
 # FlexEd Academy: Grounded AI Lesson Planning
 
-Updated November 4, 2026 from source inspection. The recorded retrieval and
-production results below are historical; the new [teacher-task benchmark](evaluation/README.md)
-is drafted but has not run. See [engineering evidence](ENGINEERING_EVIDENCE.md)
-for the implementation and verification boundaries.
-
 ## Product
 
 FlexEd Academy is an AI lesson-planning platform for high-school teachers. A teacher describes the week they need, and the system produces a structured, standards-aligned plan that can be reviewed in the browser and exported into a district-style Word document.
@@ -12,6 +7,11 @@ FlexEd Academy is an AI lesson-planning platform for high-school teachers. A tea
 The product challenge is not simply generating fluent prose. Standards contain low-frequency identifiers, repeated numbering schemes, and course-specific meanings. A plausible-looking citation can still be wrong, so the system treats retrieval, validation, and refusal as product behavior, and measures them.
 
 ## How quality is measured
+
+Updated November 4, 2026 from source inspection. Retrieval and production
+results below are historical. The new [teacher-task benchmark](evaluation/README.md)
+awaits expert reference review and has not run. See [engineering evidence](ENGINEERING_EVIDENCE.md)
+for the recorded checks and their scope.
 
 The codebase includes deterministic unit, contract, retrieval, grounding,
 security, and artifact tests. Retrieval quality is gated at release by a
