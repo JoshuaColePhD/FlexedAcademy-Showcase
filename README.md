@@ -6,46 +6,46 @@
 
 [Explore the demo](https://flexedacademy.com) · [Read the case study](./FlexedAcademy_Case_Study.md) · [Inspect engineering evidence](./ENGINEERING_EVIDENCE.md)
 
-I built and operate FlexEd as a solo project. Its central problem is making an
-AI-generated teaching artifact inspectable: the teacher needs to see which
-standards informed it, check the proposed activities, and recover when generation
-or document export fails. The product connects that entire workflow, from source
-ingestion to a saved plan and downloadable document.
+On the sign-in page, choose **Explore demo**. Browse sample plans, citations,
+and Word export without signing up or adding a payment method. The demo is read-only;
+generation and edits are disabled. The recorded walkthrough above is also
+available if the hosted demo is unavailable.
+
+I built and operate FlexEd as a solo project for teachers who need usable plans
+with checkable standards. It connects source retrieval, generation, revision,
+and Word export in one workflow, so teachers can inspect a plan before using it.
 
 ## What I built
 
-- A retrieval pipeline combining semantic search, keyword search, course and grade filters, query expansion, and bounded lexical reranking, followed by a citation-grounding audit.
-- A Python/FastAPI application with structured OpenAI outputs, tool-driven planning and revision, streamed progress, tenant-scoped Postgres storage, and recoverable document jobs.
-- Evaluation and operating controls: retrieval regression cases, deterministic contract tests, token-cost estimates, request identities, and outcome/latency measurements.
+- **Grounded planning:** keyword and semantic search, course and grade filters, and checks that cited standards come from the retrieved sources.
+- **Complete application:** Python/FastAPI, React, structured OpenAI outputs, tool-driven revision, Postgres storage, and Word export.
+- **Reliability:** recoverable generation and export jobs, regression tests, token-cost estimates, and latency/failure measurements.
 
 ## Results
 
 | Evidence | What it establishes |
 | --- | --- |
-| Recorded retrieval | **61/61** at recall@5 and recall@20 on the historical corpus regression set; not rerun for this update. |
-| Teacher-task evaluation | **40 draft cases**, awaiting teacher review. Hosted evaluation has not run; no generation-quality score is claimed. |
-| Production snapshot | **September 6, 2026:** a working demo path at that date, without a current uptime or adoption claim. |
-| Offline evaluator | **22 tests passed** on November 4. These check reporting behavior, not hosted model performance. |
+| Historical retrieval check | Expected standard found in the top five results for **61/61 corpus cases**; not rerun for this update. |
+| Production snapshot | Working demo path recorded **September 6, 2026**; a dated product check, not current uptime or adoption data. |
+| Offline evaluator | **22 tests passed** on **November 4, 2026**, verifying reporting behavior rather than hosted model performance. |
 
-The new benchmark keeps retrieval recall and MRR separate from human-reviewed
-correctness, faithfulness, and citation support. AP Language remains the most
-calibrated course. A valid citation does not establish that every activity is
-instructionally sound, and teachers should review generated plans before use.
+Next evaluation: [40 drafted teacher tasks](./evaluation/README.md) await expert
+reference review. Hosted evaluation has not run; no generation-quality score is
+claimed.
+
+AP Language has the deepest evaluation coverage. Retrieval accuracy does not
+establish instructional quality; teachers should review generated plans.
 
 ## How it works
 
-Teacher request → scoped hybrid retrieval → structured generation → schema
-and citation checks → saved plan → Word export.
+Teacher request → find relevant standards → generate and check a plan → save → Word export.
 
-On the live sign-in page, choose **Explore demo** to browse a seeded, read-only
-account without signing up or buying credits. The demo lets reviewers inspect
-plans, citations, and export; generation and edits are disabled. The walkthrough
-above remains available if the hosted demo is unavailable.
+The interface streams progress while the backend validates the completed plan
+before saving it. Document export runs as a recoverable job, so a disconnected
+browser or interrupted export does not have to mean starting over.
 
 ## Explore further
 
-[Architecture and tradeoffs](./FlexedAcademy_Case_Study.md) · [Evaluation method and current status](./evaluation/README.md) · [Historical production checks](./PRODUCTION_EVIDENCE.md) · [Sample Word output](./FlexedAcademy_Sample_Lesson_Plan.docx) · [One-page brief](./PORTFOLIO_BRIEF.md) · [Full-quality walkthrough](./FlexedAcademy_Walkthrough.mp4)
+[Architecture and tradeoffs](./FlexedAcademy_Case_Study.md) · [Historical production checks](./PRODUCTION_EVIDENCE.md) · [Sample Word output](./FlexedAcademy_Sample_Lesson_Plan.docx) · [Full-quality walkthrough](./FlexedAcademy_Walkthrough.mp4)
 
-Source code is private and available on request. This showcase contains product
-and engineering evidence; it claims no teacher-adoption counts, learning gains,
-or independently validated scoring of instructional quality.
+Source code is private and available on request.
