@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "dataset_id": "flexed-teacher-tasks-v1",
+  "dataset_sha256": "d2e4bf23d6ca59b8bfd91b884371e22bdd55c76be09501bf10facd66dbeb339b",
+  "status": "not_run",
+  "run": null,
+  "label_review_pending": [
+    "teacher-001",
+    "teacher-002",
+    "teacher-003",
+    "teacher-004",
+    "teacher-005",
+    "teacher-006",
+    "teacher-007",
+    "teacher-008",
+    "teacher-009",
+    "teacher-010",
+    "teacher-011",
+    "teacher-012",
+    "teacher-013",
+    "teacher-014",
+    "teacher-015",
+    "teacher-016",
+    "teacher-017",
+    "teacher-018",
+    "teacher-019",
+    "teacher-020",
+    "teacher-021",
+    "teacher-022",
+    "teacher-023",
+    "teacher-024",
+    "teacher-025",
+    "teacher-026",
+    "teacher-027",
+    "teacher-028",
+    "teacher-029",
+    "teacher-030",
+    "teacher-031",
+    "teacher-032",
+    "teacher-033",
+    "teacher-034",
+    "teacher-035",
+    "teacher-036",
+    "teacher-037",
+    "teacher-038",
+    "teacher-039",
+    "teacher-040"
+  ],
+  "generation_review_pending": [],
+  "missing_or_failed_cases": [
+    "teacher-001",
+    "teacher-002",
+    "teacher-003",
+    "teacher-004",
+    "teacher-005",
+    "teacher-006",
+    "teacher-007",
+    "teacher-008",
+    "teacher-009",
+    "teacher-010",
+    "teacher-011",
+    "teacher-012",
+    "teacher-013",
+    "teacher-014",
+    "teacher-015",
+    "teacher-016",
+    "teacher-017",
+    "teacher-018",
+    "teacher-019",
+    "teacher-020",
+    "teacher-021",
+    "teacher-022",
+    "teacher-023",
+    "teacher-024",
+    "teacher-025",
+    "teacher-026",
+    "teacher-027",
+    "teacher-028",
+    "teacher-029",
+    "teacher-030",
+    "teacher-031",
+    "teacher-032",
+    "teacher-033",
+    "teacher-034",
+    "teacher-035",
+    "teacher-036",
+    "teacher-037",
+    "teacher-038",
+    "teacher-039",
+    "teacher-040"
+  ],
+  "all": {
+    "case_count": 40,
+    "outcomes": {
+      "ok": 0,
+      "error": 0,
+      "not_run": 40
+    },
+    "retrieval": {
+      "evaluated_cases": 0,
+      "reference_cases": 32,
+      "recall_at_5": null,
+      "recall_at_20": null,
+      "mrr_at_20": null
+    },
+    "generation": {
+      "human_reviewed_cases": 0,
+      "correctness_mean_0_to_2": null,
+      "faithfulness_mean_0_to_2": null,
+      "behavior_accuracy": null,
+      "supported_citation_rate": null,
+      "supported_citation_count": 0,
+      "citation_count": 0
+    }
+  },
+  "splits": {
+    "development": {
+      "case_count": 28,
+      "outcomes": {
+        "ok": 0,
+        "error": 0,
+        "not_run": 28
+      },
+      "retrieval": {
+        "evaluated_cases": 0,
+        "reference_cases": 24,
+        "recall_at_5": null,
+        "recall_at_20": null,
+        "mrr_at_20": null
+      },
+      "generation": {
+        "human_reviewed_cases": 0,
+        "correctness_mean_0_to_2": null,
+        "faithfulness_mean_0_to_2": null,
+        "behavior_accuracy": null,
+        "supported_citation_rate": null,
+        "supported_citation_count": 0,
+        "citation_count": 0
+      }
+    },
+    "holdout": {
+      "case_count": 12,
+      "outcomes": {
+        "ok": 0,
+        "error": 0,
+        "not_run": 12
+      },
+      "retrieval": {
+        "evaluated_cases": 0,
+        "reference_cases": 8,
+        "recall_at_5": null,
+        "recall_at_20": null,
+        "mrr_at_20": null
+      },
+      "generation": {
+        "human_reviewed_cases": 0,
+        "correctness_mean_0_to_2": null,
+        "faithfulness_mean_0_to_2": null,
+        "behavior_accuracy": null,
+        "supported_citation_rate": null,
+        "supported_citation_count": 0,
+        "citation_count": 0
+      }
+    }
+  },
+  "interpretation": "Metrics use approved reference labels only; generation metrics also require approved human ratings. Incomplete subsets are diagnostic, never a completed benchmark. No network or model calls are made by this evaluator."
+}

@@ -1,45 +1,51 @@
-# FlexEd Academy — project showcase
+# FlexEd Academy
 
-FlexEd Academy is an AI lesson planner for high-school teachers that produces
-structured, standards-aligned weekly plans and exports them as district-style
-Word documents. I (Joshua Cole) built it and run it solo.
-
-The design centers on measurable reliability: retrieval over real standards
-documents is evaluated against a canonical recall set (currently 61/61
-recall@5), and every cited standard in a generated plan is checked by a
-grounding audit before the plan is saved. Details are in the
-[case study](./FlexedAcademy_Case_Study.md).
+**FlexEd Academy helps teachers turn a weekly teaching request into a standards-grounded lesson plan and a district-style Word document.**
 
 ![FlexEd Academy walkthrough](./FlexedAcademy_Walkthrough.gif)
 
-## Try the live demo
+[Explore the demo](https://flexedacademy.com) · [Read the case study](./FlexedAcademy_Case_Study.md) · [Inspect engineering evidence](./ENGINEERING_EVIDENCE.md)
 
-1. Go to [https://flexedacademy.com](https://flexedacademy.com).
-2. On the sign-in page, click **Explore demo**.
-3. You are signed in to a read-only Recruiter Demo account with seeded example
-   plans. You can browse plans, citations, and document export; generation,
-   edits, uploads, sharing, and billing are disabled for this account.
+I built and operate FlexEd as a solo project. Its central problem is making an
+AI-generated teaching artifact inspectable: the teacher needs to see which
+standards informed it, check the proposed activities, and recover when generation
+or document export fails. The product connects that entire workflow, from source
+ingestion to a saved plan and downloadable document.
 
-No sign-up or payment method is needed.
+## What I built
 
-## What's in this package
+- A retrieval pipeline combining semantic search, keyword search, course and grade filters, query expansion, and bounded lexical reranking, followed by a citation-grounding audit.
+- A Python/FastAPI application with structured OpenAI outputs, tool-driven planning and revision, streamed progress, tenant-scoped Postgres storage, and recoverable document jobs.
+- Evaluation and operating controls: retrieval regression cases, deterministic contract tests, token-cost estimates, request identities, and outcome/latency measurements.
 
-| File | Description |
-|---|---|
-| [FlexedAcademy_Case_Study.md](./FlexedAcademy_Case_Study.md) | Applied-AI case study: how quality is measured, architecture, grounding and failure behavior, tradeoffs |
-| [PORTFOLIO_BRIEF.md](./PORTFOLIO_BRIEF.md) | One-page summary, evaluation highlights, suggested two-minute walkthrough, limitations |
-| [PRODUCTION_EVIDENCE.md](./PRODUCTION_EVIDENCE.md) | Dated production check snapshot (September 6, 2026) and recorded quality baselines |
-| [FlexedAcademy_Sample_Lesson_Plan.docx](./FlexedAcademy_Sample_Lesson_Plan.docx) | Sample generated weekly lesson plan (Word export) |
-| [FlexedAcademy_Walkthrough.gif](./FlexedAcademy_Walkthrough.gif) | Product walkthrough (GIF, shown above) |
-| [FlexedAcademy_Walkthrough.mp4](./FlexedAcademy_Walkthrough.mp4) | Product walkthrough, higher quality (MP4) |
-| [FlexedAcademy_Walkthrough.webm](./FlexedAcademy_Walkthrough.webm) | Product walkthrough (WebM) |
+## Results
 
-## Limitations
+| Evidence | What it establishes |
+| --- | --- |
+| Recorded retrieval | **61/61** at recall@5 and recall@20 on the historical corpus regression set; not rerun for this update. |
+| Teacher-task evaluation | **40 draft cases**, awaiting teacher review. Hosted evaluation has not run; no generation-quality score is claimed. |
+| Production snapshot | **September 6, 2026:** a working demo path at that date, without a current uptime or adoption claim. |
+| Offline evaluator | **22 tests passed** on November 4. These check reporting behavior, not hosted model performance. |
 
-AP Language is the most thoroughly calibrated course. Generated plans should
-be reviewed by a qualified teacher. No pilot or usage metrics are claimed; the
-evidence here is evaluation and production-check results.
+The new benchmark keeps retrieval recall and MRR separate from human-reviewed
+correctness, faithfulness, and citation support. AP Language remains the most
+calibrated course. A valid citation does not establish that every activity is
+instructionally sound, and teachers should review generated plans before use.
 
-## Source code
+## How it works
 
-Source code is private; available on request.
+Teacher request → scoped hybrid retrieval → structured generation → schema
+and citation checks → saved plan → Word export.
+
+On the live sign-in page, choose **Explore demo** to browse a seeded, read-only
+account without signing up or buying credits. The demo lets reviewers inspect
+plans, citations, and export; generation and edits are disabled. The walkthrough
+above remains available if the hosted demo is unavailable.
+
+## Explore further
+
+[Architecture and tradeoffs](./FlexedAcademy_Case_Study.md) · [Evaluation method and current status](./evaluation/README.md) · [Historical production checks](./PRODUCTION_EVIDENCE.md) · [Sample Word output](./FlexedAcademy_Sample_Lesson_Plan.docx) · [One-page brief](./PORTFOLIO_BRIEF.md) · [Full-quality walkthrough](./FlexedAcademy_Walkthrough.mp4)
+
+Source code is private and available on request. This showcase contains product
+and engineering evidence; it claims no teacher-adoption counts, learning gains,
+or independently validated scoring of instructional quality.
