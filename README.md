@@ -2,24 +2,36 @@
 
 **FlexEd Academy helps teachers turn a weekly teaching request into a standards-grounded lesson plan and a district-style Word document.**
 
-<img src="./media/flexed-sprout.png" alt="FlexEd Academy sprout logo" width="180">
+<img src="./media/flexed-sprout.png" alt="FlexEd Academy sprout logo" width="84">
 
 [Explore the demo](https://flexedacademy.com) · [Read the case study](./FlexedAcademy_Case_Study.md) · [Inspect engineering evidence](./ENGINEERING_EVIDENCE.md)
 
-On the sign-in page, choose **Explore demo**. Browse sample plans, citations,
-and Word export without signing up or adding a payment method. The demo is read-only;
-generation and edits are disabled. The recorded walkthrough above is also
-available if the hosted demo is unavailable.
+<a href="./FlexedAcademy_Walkthrough.mp4"><img src="./FlexedAcademy_Walkthrough.gif" alt="Recorded FlexEd planning and Word export workflow" width="640"></a>
 
-I built and operate FlexEd as a solo project for teachers who need usable plans
-with checkable standards. It connects source retrieval, generation, revision,
-and Word export in one workflow, so teachers can inspect a plan before using it.
+On the sign-in page, choose **Explore demo** to browse sample plans, citations,
+and Word export without an account. The demo is read-only; generation and edits
+are disabled. The [recorded walkthrough](./FlexedAcademy_Walkthrough.mp4) is also available.
+
+I built FlexEd as a solo project, connecting planning, revision, source inspection,
+and Word export in one teacher workflow.
 
 ## What I built
 
 - **Grounded planning:** keyword and semantic search, course and grade filters, and checks that cited standards come from the retrieved sources.
 - **Complete application:** Python/FastAPI, React, structured OpenAI outputs, tool-driven revision, Postgres storage, and Word export.
 - **Reliability:** recoverable generation and export jobs, regression tests, token-cost estimates, and latency/failure measurements.
+
+## Engineering decisions
+
+**Check sources before saving.** Course and grade filters narrow retrieval;
+citation checks flag codes outside the retrieved sources. This makes the source
+behind a generated plan inspectable.
+
+**Recover interrupted work.** Generation and document export use recoverable
+jobs, so a lost connection does not have to discard completed work.
+
+Request → retrieve standards → generate and validate → save → Word export.
+
 
 ## Results
 
@@ -35,14 +47,6 @@ claimed.
 
 AP Language has the deepest evaluation coverage. Retrieval accuracy does not
 establish instructional quality; teachers should review generated plans.
-
-## How it works
-
-Teacher request → find relevant standards → generate and check a plan → save → Word export.
-
-The interface streams progress while the backend validates the completed plan
-before saving it. Document export runs as a recoverable job, so a disconnected
-browser or interrupted export does not have to mean starting over.
 
 ## Explore further
 
