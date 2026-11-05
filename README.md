@@ -2,7 +2,7 @@
 
 **FlexEd Academy helps teachers turn a weekly teaching request into a standards-grounded lesson plan and a district-style Word document.**
 
-![FlexEd Academy walkthrough](./FlexedAcademy_Walkthrough.gif)
+<img src="./media/flexed-sprout.png" alt="FlexEd Academy sprout logo" width="180">
 
 [Explore the demo](https://flexedacademy.com) · [Read the case study](./FlexedAcademy_Case_Study.md) · [Inspect engineering evidence](./ENGINEERING_EVIDENCE.md)
 
