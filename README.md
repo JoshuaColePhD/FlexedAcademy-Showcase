@@ -4,13 +4,11 @@
 
 <img src="./media/flexed-sprout.png" alt="FlexEd Academy sprout logo" width="84">
 
-[Explore the demo](https://flexedacademy.com) · [Read the case study](./FlexedAcademy_Case_Study.md) · [Inspect engineering evidence](./ENGINEERING_EVIDENCE.md)
+[Open the read-only demo](https://flexedacademy.com) · [Read the case study](./FlexedAcademy_Case_Study.md) · [Inspect engineering evidence](./ENGINEERING_EVIDENCE.md)
 
-<a href="./FlexedAcademy_Walkthrough.mp4"><img src="./FlexedAcademy_Walkthrough.gif" alt="Recorded FlexEd planning and Word export workflow" width="640"></a>
+<a href="./media/flexed-current-demo.gif"><img src="./media/flexed-current-demo.gif" alt="Current FlexEd UI showing the sample chat, five-day plan, Word export control, and cited standard text" width="720"></a>
 
-On the sign-in page, choose **Explore demo** to browse sample plans, citations,
-and Word export without an account. The demo is read-only; generation and edits
-are disabled. The [recorded walkthrough](./FlexedAcademy_Walkthrough.mp4) is also available.
+*Captured November 5, 2026 in the public read-only demo. On the signed-out homepage, choose **See a finished lesson plan** to inspect the same seeded plan, its sources, and Word export.*
 
 I built FlexEd as a solo project, connecting planning, revision, source inspection,
 and Word export in one teacher workflow.
@@ -50,6 +48,6 @@ establish instructional quality; teachers should review generated plans.
 
 ## Explore further
 
-[Architecture and tradeoffs](./FlexedAcademy_Case_Study.md) · [Historical production checks](./PRODUCTION_EVIDENCE.md) · [Sample Word output](./FlexedAcademy_Sample_Lesson_Plan.docx) · [Full-quality walkthrough](./FlexedAcademy_Walkthrough.mp4)
+[Architecture and tradeoffs](./FlexedAcademy_Case_Study.md) · [Historical production checks](./PRODUCTION_EVIDENCE.md) · [Sample Word output](./FlexedAcademy_Sample_Lesson_Plan.docx) · [Earlier walkthrough (MP4)](./FlexedAcademy_Walkthrough.mp4)
 
 Source code is private and available on request.
