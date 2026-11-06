@@ -8,19 +8,24 @@ The product challenge is not simply generating fluent prose. Standards contain l
 
 ## How quality is measured
 
+Updated November 4, 2026 from source inspection. Retrieval and production
+results below are historical. The new [teacher-task benchmark](evaluation/README.md)
+awaits expert reference review and has not run. See [engineering evidence](ENGINEERING_EVIDENCE.md)
+for the recorded checks and their scope.
+
 The codebase includes deterministic unit, contract, retrieval, grounding,
 security, and artifact tests. Retrieval quality is gated at release by a
 recall evaluation set generated from the canonical course identities:
 
 ```text
-Current recall@5:  61 / 61
-Current recall@20: 61 / 61
+Recorded recall@5:  61 / 61
+Recorded recall@20: 61 / 61
 ```
 
-The current checked Alabama standards artifact contains 7,456 unique standards
+The recorded Alabama standards artifact contains 7,456 unique standards
 and 19,701 grade-scoped chunks across 11 frameworks, built for grades 0–12
 (Sept 6, 2026 snapshot of the Alabama course-of-study artifact; as of Sept 28,
-2026 the full production corpus holds ~137K standards across all 50 states + DC,
+2026 the full production corpus was reported to hold ~137K standards across all 50 states + DC,
 plus AP, Pre-AP, and ACT).
 An older 143-case set is kept as a historical drift diagnostic rather than a
 release gate, because corpus changes intentionally retired or moved some of its
@@ -34,13 +39,13 @@ scope, or hallucinated (see below).
 
 ## Architecture
 
-The application is a React/Vite frontend backed by a FastAPI service. Postgres/Supabase stores tenant-scoped users, classes, plans, source metadata, and generated artifacts; pgvector supports semantic retrieval. OpenAI embeddings support indexing and query retrieval, while structured generation produces a predictable lesson-plan contract.
+The application is a React/Vite frontend backed by a FastAPI service. Postgres/Supabase stores tenant-scoped users, classes, plans, source metadata, and generated artifacts. Retrieval combines pgvector semantic search with Postgres full-text search through reciprocal rank fusion, then applies bounded lexical reranking among scoped candidates. OpenAI embeddings support indexing and query retrieval, while structured generation produces a predictable lesson-plan contract.
 
 ```text
 Teacher request
   → class/course/grade resolution
   → query expansion and embedding
-  → scoped pgvector retrieval
+  → scoped vector + keyword retrieval and lexical reranking
   → relevance floor and scope checks
   → grounded context in the model prompt
   → strict structured lesson-plan response
@@ -49,6 +54,12 @@ Teacher request
 ```
 
 The frontend receives streamed progress through Server-Sent Events. The backend keeps the durable write path separate from the stream: a completed plan is validated, persisted, and queued for document generation rather than treating a partial response as finished work.
+
+The conversational interface uses tool calls for planning and revision. Usage
+records include estimated token costs, and content-free outcome measurements
+support latency and failure summaries. These mechanisms were inspected in source;
+this update publishes no new timing or cost measurements. The separate MCP
+connector remains experimental.
 
 ## Grounding and failure behavior
 

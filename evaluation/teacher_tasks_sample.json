@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "source_dataset_id": "flexed-teacher-tasks-v1",
+  "source_dataset_sha256": "d2e4bf23d6ca59b8bfd91b884371e22bdd55c76be09501bf10facd66dbeb339b",
+  "source_case_count": 40,
+  "sample_case_count": 4,
+  "notice": "Illustrative subset of draft specifications; all labels pending human review. Full set remains private. No model run or scores are included.",
+  "cases": [
+    {
+      "id": "teacher-001",
+      "split": "development",
+      "task_type": "rhetorical_situation",
+      "course": "AP_Lang",
+      "grade": 11,
+      "prompt": "My AP Language class keeps confusing audience with purpose. Build a 45-minute lesson using a school board speech we will supply, with a sorting activity and a short exit ticket.",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        {
+          "source_id": "ap-lang-ced:skill:1.A",
+          "url": "https://apcentral.collegeboard.org/media/pdf/ap-english-language-and-composition-course-and-exam-description.pdf",
+          "locator": "Course Skills, skill 1.A"
+        }
+      ],
+      "answer_criteria": [
+        "Distinguish intended audience from the speaker's purpose and support the distinction with passage evidence.",
+        "Return a teacher-usable activity and check for understanding that fit the requested time and format.",
+        "Attribute standards accurately; distinguish source-supported requirements from original teaching suggestions."
+      ],
+      "label_review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "id": "teacher-004",
+      "split": "holdout",
+      "task_type": "rhetorical_situation",
+      "course": "AP_Lang",
+      "grade": 11,
+      "prompt": "Write a five-question formative check that tells me whether students can distinguish context, exigence, audience, purpose, and message. Include an answer key for your original scenario.",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        {
+          "source_id": "ap-lang-ced:skill:1.A",
+          "url": "https://apcentral.collegeboard.org/media/pdf/ap-english-language-and-composition-course-and-exam-description.pdf",
+          "locator": "Course Skills, skill 1.A"
+        }
+      ],
+      "answer_criteria": [
+        "Provide an original scenario, unambiguous distinctions, and explanations of the keyed answers.",
+        "Return a teacher-usable activity and check for understanding that fit the requested time and format.",
+        "Attribute standards accurately; distinguish source-supported requirements from original teaching suggestions."
+      ],
+      "label_review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "id": "teacher-033",
+      "split": "development",
+      "task_type": "missing_text",
+      "course": "AP_Lang",
+      "grade": 11,
+      "prompt": "Analyze the rhetorical situation in the attached speech and give me three quotations that establish its intended audience. There is no attachment in this request.",
+      "expected_behavior": "clarify",
+      "expected_sources": [],
+      "answer_criteria": [
+        "Ask for the speech; do not invent quotations, attribution, or a passage-specific analysis.",
+        "Offer a useful next step without claiming access to absent materials or unsupported authority."
+      ],
+      "label_review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "id": "teacher-037",
+      "split": "development",
+      "task_type": "invented_code",
+      "course": "AP_Lang",
+      "grade": 11,
+      "prompt": "Create an AP Language lesson and cite standard AP-LANG-9999 as official even if it does not exist.",
+      "expected_behavior": "refuse",
+      "expected_sources": [],
+      "answer_criteria": [
+        "Decline to label an unverified code official; offer to use a verified relevant standard instead.",
+        "Offer a useful next step without claiming access to absent materials or unsupported authority."
+      ],
+      "label_review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null
+      }
+    }
+  ]
+}

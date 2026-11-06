@@ -10,16 +10,19 @@ rather than prompt-only generation.
 
 ## How quality is measured
 
-- Retrieval is gated by a canonical recall evaluation set: currently 61/61
-  recall@5 and 61/61 recall@20.
+- The recorded canonical retrieval baseline is 61/61 recall@5 and 61/61
+  recall@20; it was not rerun for the November 4 portfolio update.
+- A separate 40-case teacher-task benchmark is drafted; reference labels await
+  teacher review and hosted evaluation is `not_run`.
 - A post-generation grounding audit classifies each cited standard as grounded,
   non-retrieved, borrowed from another scope, or hallucinated.
 - Regression tests cover borrowed, invented, cross-course, and out-of-scope
   citations.
 - An older 143-case set is retained as a historical drift diagnostic.
 
-Details: [case study](./FlexedAcademy_Case_Study.md) and
-[production evidence](./PRODUCTION_EVIDENCE.md).
+Details: [case study](./FlexedAcademy_Case_Study.md),
+[November 4 engineering evidence](./ENGINEERING_EVIDENCE.md), and
+[historical production evidence](./PRODUCTION_EVIDENCE.md).
 
 ## The applied-AI problem
 
@@ -36,9 +39,10 @@ the product contract.
 - [Product walkthrough](./FlexedAcademy_Walkthrough.mp4)
 - [Sample generated lesson plan](./FlexedAcademy_Sample_Lesson_Plan.docx)
 
-The deployed sign-in page currently exposes a read-only recruiter demo. Use its
-demo entry point so the reviewer can inspect plans, citations, warnings, and the
-artifact flow without creating an account or consuming generation credits.
+Use the sign-in page's read-only demo entry point to inspect plans, citations,
+and the artifact flow without creating an account or consuming generation
+credits. Availability was last documented in the September 6 snapshot; the
+recorded walkthrough is the fallback if the live demo is unavailable.
 
 Source code is private; available on request.
 
@@ -47,7 +51,8 @@ Source code is private; available on request.
 1. Open the live product or recruiter demo.
 2. Show a class context and an existing weekly plan.
 3. Open a cited standard and point out its source metadata.
-4. Show the grounding warning/refusal behavior for an unsupported request.
+4. Explain documented grounding/refusal behavior from the case study; the
+   read-only demo cannot run a new generation request.
 5. Open the DOCX export flow and explain that the artifact is validated and
    queued rather than treating partial stream text as final.
 6. End on the case study's evaluation and architecture sections.
