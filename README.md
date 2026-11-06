@@ -50,7 +50,11 @@ establish instructional quality; teachers should review generated plans.
 
 [Architecture and tradeoffs](./FlexedAcademy_Case_Study.md) · [Historical production checks](./PRODUCTION_EVIDENCE.md) · [Sample Word output](./FlexedAcademy_Sample_Lesson_Plan.docx) · [Earlier walkthrough (MP4)](./FlexedAcademy_Walkthrough.mp4)
 
-Source code is private and available on request.
+Application source is private and is not included in this repository.
+
+## Portfolio
+
+Public evidence for other work is indexed separately from this FlexEd showcase. Those pages do not include application source. [Portfolio index](./portfolio/README.md)
 
 ## License
 
