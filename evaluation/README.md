@@ -38,8 +38,9 @@ means withheld from this project's tuning.
 
 ## Reproduction workflow
 
-The four-case sample is published above; the full dataset, evaluation script,
-tests, and review rubric are available in a source walkthrough on request. Review reference
+The four-case sample is published above. The full dataset, evaluation script,
+tests, and review rubric stay in the private source repository and are not
+included here. Review reference
 labels first and freeze the dataset checksum. Collect outputs with the actual
 model, prompt version, corpus version, and tested code revision. Preserve ranked
 retrieval source IDs and failed requests. Have a qualified teacher rate outputs

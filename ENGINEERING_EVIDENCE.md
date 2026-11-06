@@ -13,8 +13,8 @@ application development.
 
 Inspected application baseline: `ccc0e51503d016ed1c07bf9bf9d979a630c36c04`.
 Offline evaluation addition: `3728b24d360cf9819d40657f4b5f26c5e69c9f2f`.
-Source remains private; the paths below identify material available for a code
-walkthrough, rather than public download links.
+Application source remains private and is not included here. The paths below
+name inspected files for provenance. They are not a copy of the application.
 
 | Capability | Implementation evidence | Boundary |
 |---|---|---|

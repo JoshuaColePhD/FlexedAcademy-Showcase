@@ -44,7 +44,7 @@ and the artifact flow without creating an account or consuming generation
 credits. Availability was last documented in the September 6 snapshot; the
 recorded walkthrough is the fallback if the live demo is unavailable.
 
-Source code is private; available on request.
+Application source is private and is not included in this repository.
 
 ## Two-minute walkthrough
 

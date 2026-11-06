@@ -90,7 +90,7 @@ The system still depends on external model and embedding APIs, and a grounded ci
 - [WebM walkthrough](./FlexedAcademy_Walkthrough.webm)
 - [Sample generated lesson plan](./FlexedAcademy_Sample_Lesson_Plan.docx)
 
-Source code is private; available on request.
+Application source is private and is not included in this repository.
 
 ## Live recruiter demo
 
