@@ -51,3 +51,7 @@ establish instructional quality; teachers should review generated plans.
 [Architecture and tradeoffs](./FlexedAcademy_Case_Study.md) · [Historical production checks](./PRODUCTION_EVIDENCE.md) · [Sample Word output](./FlexedAcademy_Sample_Lesson_Plan.docx) · [Earlier walkthrough (MP4)](./FlexedAcademy_Walkthrough.mp4)
 
 Source code is private and available on request.
+
+## License
+
+Joshua Cole's original work in this repository is proprietary. Copyright (c) 2026 Joshua Cole. All rights reserved. No permission is granted to use, copy, modify, distribute, or sublicense it without prior written permission. See [LICENSE](./LICENSE).
