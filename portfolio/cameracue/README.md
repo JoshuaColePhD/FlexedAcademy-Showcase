@@ -1,6 +1,6 @@
 # CameraCue
 
-CameraCue is a native Mac teleprompter. The presenter writes a script, rehearses it, records, and reviews the take while speech tracking holds a place in the script. Public evidence is this page. The application source is private and is not included here.
+CameraCue is a native Mac teleprompter. The presenter writes a script, rehearses it, records, and reviews the take while speech tracking holds a place in the script. Public evidence is this page. The application repository is private, and its source is not included here.
 
 <img src="./media/studio.png" alt="CameraCue Studio home with sample scripts" width="720">
 
