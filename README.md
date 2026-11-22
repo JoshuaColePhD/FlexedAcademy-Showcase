@@ -25,6 +25,12 @@ and Word export in one teacher workflow.
 citation checks flag codes outside the retrieved sources. This makes the source
 behind a generated plan inspectable.
 
+**Trace wrong-course results to the retrieval layer.** I traced a bug in which
+retrieval returned standards for the wrong course, added course filters to the
+retrieval step, and wrote regression tests so the same cross-course error is
+caught by tests. Those tests sit alongside the 61/61 recall@5 retrieval
+regression gate and the citation audit.
+
 **Recover interrupted work.** Generation and document export use recoverable
 jobs, so a lost connection does not have to discard completed work.
 
