@@ -1,14 +1,18 @@
 # FlexEd Academy
 
-**FlexEd Academy helps teachers turn a weekly teaching request into a standards-grounded lesson plan and a district-style Word document.**
+FlexEd helps teachers turn a weekly teaching request into a five-day lesson plan. Review the standards behind each lesson, revise one activity at a time, and export the week in your school’s Word template.
 
-<img src="./media/flexed-sprout.png" alt="FlexEd Academy sprout logo" width="84">
+[Try the read-only demo](https://flexedacademy.com) · [Download the sample Word plan](./FlexedAcademy_Sample_Lesson_Plan.docx?raw=1) · [Read the engineering case study](./FlexedAcademy_Case_Study.md)
 
-[Open the read-only demo](https://flexedacademy.com) · [Read the case study](./FlexedAcademy_Case_Study.md) · [Inspect engineering evidence](./ENGINEERING_EVIDENCE.md)
+## Watch FlexEd in use
 
-<a href="./media/flexed-current-demo.gif"><img src="./media/flexed-current-demo.gif" alt="Current FlexEd UI showing the sample chat, five-day plan, Word export control, and cited standard text" width="720"></a>
+| Preview | Walkthrough |
+| --- | --- |
+| <a href="./media/onboarding.mp4"><img src="./media/onboarding-preview.gif" width="300" alt="FlexEd’s opening book and first-time class setup"></a> | **[Set up a class and build a first plan](./media/onboarding.mp4)** · 0:32<br><br>Choose Alabama, 11th grade, and AP English Language. Pick a week, enter a topic on voice and tone in Poe, then open the five-day plan. |
+| <a href="./media/review-and-export.mp4"><img src="./media/review-and-export-preview.gif" width="300" alt="The AP Language source popover and five-day lesson table"></a> | **[Check a citation and export the week](./media/review-and-export.mp4)** · 0:18<br><br>Open the saved rhetorical analysis week in the public demo. Read the source text for skill **7.A**, open the plan, and see the downloaded Word document. |
+| <a href="./media/edit-an-activity.mp4"><img src="./media/edit-an-activity-preview.gif" width="300" alt="Editing Monday’s warm-up in the weekly plan"></a> | **[Revise Monday’s warm-up](./media/edit-an-activity.mp4)** · 0:14<br><br>Ask partners to defend their choice of the most trustworthy speaker. Edit Monday’s activity directly in the table and save the change. |
 
-*Captured November 5, 2026 in the public read-only demo. On the signed-out homepage, choose **See a finished lesson plan** to inspect the same seeded plan, its sources, and Word export.*
+The onboarding and editing recordings use sample data in a local preview. To follow the citation and export walkthrough yourself, choose **See a finished lesson plan** on the signed-out homepage.
 
 I built FlexEd as a solo project, connecting planning, revision, source inspection,
 and Word export in one teacher workflow.
