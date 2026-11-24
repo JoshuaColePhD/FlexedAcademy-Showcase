@@ -74,6 +74,18 @@ This makes a request traceable end to end:
 - Storage records the validated plan, ownership, source identifiers, and document status.
 - The frontend displays the plan, citations, warnings, and recoverable errors.
 
+## Debugging example: standards from the wrong course
+
+Standards in different courses reuse similar numbering and wording, so a
+semantically close chunk can belong to the wrong course. I traced a bug in which
+retrieval returned standards for the wrong course and fixed it at the retrieval
+layer by adding course filters that scope candidate chunks to the requested
+course before they reach generation. I then wrote regression tests
+for cross-course, borrowed, invented, and out-of-scope citations, so the same
+failure is caught by tests and by the post-generation grounding audit rather
+than by a teacher reading the plan. These tests complement the canonical
+retrieval regression gate (61/61 recall@5 on the recorded set).
+
 ## What the project demonstrates
 
 The strongest part of the project is the complete applied-AI loop: source ingestion, retrieval, structured generation, validation, grounding audits, tenant-aware persistence, streaming UX, and document export are connected as one product. It demonstrates the engineering judgment required to make an LLM feature inspectable, measurable, and usable, not just a prompt that returns attractive text.

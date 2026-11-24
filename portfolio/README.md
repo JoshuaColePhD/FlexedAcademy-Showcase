@@ -11,7 +11,7 @@ The [project inventory](./inventory.md) lists the other resume-linked work and w
 | Project | Public evidence here | What the evidence supports |
 | --- | --- | --- |
 | [FlexEd Academy](../README.md) | Root showcase, case study, and production snapshot | Historical retrieval gate of 61/61 recall@5 and 61/61 recall@20. That is not generation quality. |
-| [CameraCue](./cameracue/README.md) | Recorded interface and simulated transcript-alignment results | Held-out replay only. Not live microphone accuracy. |
+| [CameraCue](./cameracue/README.md) ([standalone showcase](https://github.com/JoshuaColePhD/CameraCue-Showcase)) | Recorded interface and simulated transcript-alignment results | Held-out replay only. Not live microphone accuracy. |
 | [Nalu](./nalu/README.md) | Recorded Mac demonstration and synthetic HTTP timings | Cleanup-request timing only. Not end-to-end dictation latency. |
 
 ## License
