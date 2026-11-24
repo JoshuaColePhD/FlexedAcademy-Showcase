@@ -6,11 +6,23 @@ FlexEd helps teachers turn a weekly teaching request into a five-day lesson plan
 
 ## Watch FlexEd in use
 
-| Preview | Walkthrough |
-| --- | --- |
-| <a href="./media/onboarding.mp4"><img src="./media/onboarding-preview.gif" width="300" alt="FlexEd’s opening book and first-time class setup"></a> | **[Set up a class and build a first plan](./media/onboarding.mp4)** · 0:32<br><br>Choose Alabama, 11th grade, and AP English Language. Pick a week, enter a topic on voice and tone in Poe, then open the five-day plan. |
-| <a href="./media/review-and-export.mp4"><img src="./media/review-and-export-preview.gif" width="300" alt="The AP Language source popover and five-day lesson table"></a> | **[Check a citation and export the week](./media/review-and-export.mp4)** · 0:18<br><br>Open the saved rhetorical analysis week in the public demo. Read the source text for skill **7.A**, open the plan, and see the downloaded Word document. |
-| <a href="./media/edit-an-activity.mp4"><img src="./media/edit-an-activity-preview.gif" width="300" alt="Editing Monday’s warm-up in the weekly plan"></a> | **[Revise Monday’s warm-up](./media/edit-an-activity.mp4)** · 0:14<br><br>Ask partners to defend their choice of the most trustworthy speaker. Edit Monday’s activity directly in the table and save the change. |
+### Set up a class and build a first plan · 0:32
+
+Choose Alabama, 11th grade, and AP English Language. Pick a week, enter a topic on voice and tone in Poe, then open the five-day plan.
+
+https://github.com/user-attachments/assets/90f69554-efe1-499d-9a65-eb4c7e6480b3
+
+### Check a citation and export the week · 0:18
+
+Open the saved rhetorical analysis week in the public demo. Read the source text for skill **7.A**, open the plan, and see the downloaded Word document.
+
+https://github.com/user-attachments/assets/096696d3-e350-4d20-93dd-3c42bb8738c2
+
+### Revise Monday’s warm-up · 0:14
+
+Edit Monday’s activity to ask partners to defend their choice of the most trustworthy speaker, then save the change.
+
+https://github.com/user-attachments/assets/41641fd4-245d-4760-9537-7372adfec037
 
 The onboarding and editing recordings use sample data in a local preview. To follow the citation and export walkthrough yourself, choose **See a finished lesson plan** on the signed-out homepage.
 
@@ -52,7 +64,7 @@ establish instructional quality; teachers should review generated plans.
 
 ## Explore further
 
-[Architecture and tradeoffs](./FlexedAcademy_Case_Study.md) · [Historical production checks](./PRODUCTION_EVIDENCE.md) · [Sample Word output](./FlexedAcademy_Sample_Lesson_Plan.docx) · [Earlier walkthrough (MP4)](./FlexedAcademy_Walkthrough.mp4)
+[Architecture and tradeoffs](./FlexedAcademy_Case_Study.md) · [Historical production checks](./PRODUCTION_EVIDENCE.md) · [Sample Word output](./FlexedAcademy_Sample_Lesson_Plan.docx) · [Download the earlier walkthrough (MP4)](./FlexedAcademy_Walkthrough.mp4?raw=1)
 
 Application source is private and is not included in this repository.
 
