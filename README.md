@@ -10,7 +10,7 @@ FlexEd helps teachers turn a weekly teaching request into a five-day lesson plan
 
 Choose a class and school, add a syllabus and curriculum map if you have them, then open the teaching workspace. Watch Sprout count on one hand when the teacher selects a grade and give a thumbs-up for the course.
 
-https://github.com/user-attachments/assets/730b55ee-5d64-49cd-9cbf-61f627f6e55e
+https://github.com/user-attachments/assets/297d41e9-9ea0-4684-88fc-0b877f59dd05
 
 [Download the MP4 with English captions](./media/onboarding.mp4?raw=1) · [See Sprout’s hand signals up close](./media/onboarding-preview.gif)
 
