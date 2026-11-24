@@ -6,11 +6,11 @@ FlexEd helps teachers turn a weekly teaching request into a five-day lesson plan
 
 ## Watch FlexEd in use
 
-### Plan your first week with Sprout · 0:43
+### Set up a classroom with Sprout · 0:23
 
-Choose a state, grade, and course, then give FlexEd a topic on suspense in Poe. Watch Sprout react as the teacher flips back to change the week, keeps the original topic, and opens the finished lesson plan.
+Choose a class and school, add a syllabus and curriculum map if you have them, then open the teaching workspace. Watch Sprout count on one hand when the teacher selects a grade and give a thumbs-up for the course.
 
-https://github.com/user-attachments/assets/293792ba-093c-42fe-b007-3cc0bbc2a1be
+https://github.com/user-attachments/assets/730b55ee-5d64-49cd-9cbf-61f627f6e55e
 
 [Download the MP4 with English captions](./media/onboarding.mp4?raw=1) · [See Sprout’s hand signals up close](./media/onboarding-preview.gif)
 
