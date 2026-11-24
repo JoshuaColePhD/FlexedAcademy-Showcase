@@ -6,13 +6,13 @@ FlexEd helps teachers turn a weekly teaching request into a five-day lesson plan
 
 ## Watch FlexEd in use
 
-### Set up a class and build a first plan · 0:40
+### Plan your first week with Sprout · 0:43
 
-Choose Alabama, 11th grade, and AP English Language. Pick a week, enter a topic on voice and tone in Poe, then open the five-day plan.
+Choose a state, grade, and course, then give FlexEd a topic on suspense in Poe. Watch Sprout react as the teacher flips back to change the week, keeps the original topic, and opens the finished lesson plan.
 
-https://github.com/user-attachments/assets/ef56be9a-1d99-4fe6-b73e-a39364ab9f68
+https://github.com/user-attachments/assets/293792ba-093c-42fe-b007-3cc0bbc2a1be
 
-[See Sprout’s page gestures up close](https://raw.githubusercontent.com/JoshuaColePhD/FlexedAcademy-Showcase/main/media/onboarding-preview.gif)
+[Download the MP4 with English captions](./media/onboarding.mp4?raw=1) · [See Sprout’s hand signals up close](./media/onboarding-preview.gif)
 
 ### Check a citation and export the week · 0:18
 
