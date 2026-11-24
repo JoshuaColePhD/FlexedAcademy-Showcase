@@ -46,8 +46,9 @@ behind a generated plan inspectable.
 **Recover interrupted work.** Generation and document export use recoverable
 jobs, so a lost connection does not have to discard completed work.
 
-Request → retrieve standards → generate and validate → save → Word export.
+## How it works
 
+![A teacher’s weekly request flows through standards retrieval, structured drafting, citation checks, and Word export. The evaluation table shows which stages each check covers.](./media/weekly-lesson-pipeline.jpg)
 
 ## Results
 
