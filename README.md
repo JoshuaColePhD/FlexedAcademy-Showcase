@@ -6,11 +6,11 @@ FlexEd helps teachers turn a weekly teaching request into a five-day lesson plan
 
 ## Watch FlexEd in use
 
-### Set up a class and build a first plan · 0:32
+### Set up a class and build a first plan · 0:40
 
 Choose Alabama, 11th grade, and AP English Language. Pick a week, enter a topic on voice and tone in Poe, then open the five-day plan.
 
-https://github.com/user-attachments/assets/90f69554-efe1-499d-9a65-eb4c7e6480b3
+https://github.com/user-attachments/assets/43d4dfb4-e12f-4efe-aed3-8c028e33a18d
 
 ### Check a citation and export the week · 0:18
 
