@@ -10,7 +10,7 @@ FlexEd helps teachers turn a weekly teaching request into a five-day lesson plan
 
 Choose a class and school, add a syllabus and curriculum map if you have them, then open the teaching workspace. Watch Sprout count on one hand when the teacher selects a grade and give a thumbs-up for the course.
 
-https://github.com/user-attachments/assets/07e611c9-7831-4d3d-acb5-f6763063e05b
+https://github.com/user-attachments/assets/8e9bfabb-f4c1-47b5-9608-d0a246421d5f
 
 [Download the MP4 with English captions](./media/onboarding.mp4?raw=1) · [See Sprout’s hand signals up close](./media/onboarding-preview.gif)
 
@@ -18,13 +18,13 @@ https://github.com/user-attachments/assets/07e611c9-7831-4d3d-acb5-f6763063e05b
 
 Open the saved rhetorical analysis week in the public demo. Read the source text for skill **7.A**, open the plan, and see the downloaded Word document.
 
-https://github.com/user-attachments/assets/096696d3-e350-4d20-93dd-3c42bb8738c2
+https://github.com/user-attachments/assets/d9d7412a-5417-4815-9e33-2d2eeb3aca7b
 
 ### Revise Monday’s warm-up · 0:14
 
 Edit Monday’s activity to ask partners to defend their choice of the most trustworthy speaker, then save the change.
 
-https://github.com/user-attachments/assets/41641fd4-245d-4760-9537-7372adfec037
+https://github.com/user-attachments/assets/f0bdc1be-2168-4837-ac71-83e751ff2bab
 
 The onboarding and editing recordings use sample data in a local preview. To follow the citation and export walkthrough yourself, choose **See a finished lesson plan** on the signed-out homepage.
 
